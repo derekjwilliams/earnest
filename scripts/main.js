@@ -14,31 +14,31 @@ function setLocations(value) {
   })
 }
 
-// const getLocations = (count, after) => 
-//   fetch("http://localhost:8080/tests/exampleResponse.json", {"mode": "no-cors"})
-//     .then(response => response.json())
-//     .then(json => setLocations(json))
-
-
-const getLocations = (count, after) => {
-  const query = "{\"query\":\"{\\n  allLocations (first: " + count + ") {\\n    nodes {\\n      provinceState\\n      countryRegion\\n    }\\n  }\\n}\\n\",\"variables\":{\"projectReference\":{\"projectReference\":{\"projectId\":\"3\"}}}}"
-  fetch("http://localhost:5000/graphql", {
-    "headers": {
-      "accept": "application/json",
-      "accept-language": "en-US,en;q=0.9,fr;q=0.8",
-      "content-type": "application/json",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin"
-    },
-    "referrer": "http://localhost:5000/graphiql",
-    "referrerPolicy": "no-referrer-when-downgrade",
-    "body": query,
-    "method": "POST",
-    "mode": "cors"
-  }).then(response => response.json())
+const getLocations = (count, after) => 
+  fetch("http://localhost:8080/tests/exampleResponse.json", {"mode": "no-cors"})
+    .then(response => response.json())
     .then(json => setLocations(json))
-}
+
+
+// const getLocations = (count, after) => {
+//   const query = "{\"query\":\"{\\n  allLocations (first: " + count + ") {\\n    nodes {\\n      provinceState\\n      countryRegion\\n    }\\n  }\\n}\\n\",\"variables\":{\"projectReference\":{\"projectReference\":{\"projectId\":\"3\"}}}}"
+//   fetch("http://localhost:5000/graphql", {
+//     "headers": {
+//       "accept": "application/json",
+//       "accept-language": "en-US,en;q=0.9,fr;q=0.8",
+//       "content-type": "application/json",
+//       "sec-fetch-dest": "empty",
+//       "sec-fetch-mode": "cors",
+//       "sec-fetch-site": "same-origin"
+//     },
+//     "referrer": "http://localhost:5000/graphiql",
+//     "referrerPolicy": "no-referrer-when-downgrade",
+//     "body": query,
+//     "method": "POST",
+//     "mode": "cors"
+//   }).then(response => response.json())
+//     .then(json => setLocations(json))
+// }
 
 const moreLocations = () => {
 }
