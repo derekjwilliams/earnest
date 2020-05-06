@@ -28,3 +28,11 @@ or install globally
 yarn global add majestic
 ```
 
+### http-server for node, needed to run the local example response file
+
+```bash
+npm install --global http-server
+
+http-server .
+```
+
