@@ -1,0 +1,48 @@
+{
+  "data": {
+    "allLocations": {
+      "nodes": [
+        {
+          "provinceState": "Washington",
+          "countryRegion": "US"
+        },
+        {
+          "provinceState": "Wisconsin",
+          "countryRegion": "US"
+        },
+        {
+          "provinceState": "Nebraska",
+          "countryRegion": "US"
+        },
+        {
+          "provinceState": "Idaho",
+          "countryRegion": "US"
+        },
+        {
+          "provinceState": "North Carolina",
+          "countryRegion": "US"
+        },
+        {
+          "provinceState": "Ohio",
+          "countryRegion": "US"
+        },
+        {
+          "provinceState": "South Dakota",
+          "countryRegion": "US"
+        },
+        {
+          "provinceState": "Diamond Princess",
+          "countryRegion": "Canada"
+        },
+        {
+          "provinceState": "Ohio",
+          "countryRegion": "US"
+        },
+        {
+          "provinceState": "Alabama",
+          "countryRegion": "US"
+        }
+      ]
+    }
+  }
+}

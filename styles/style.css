@@ -1,0 +1,62 @@
+html {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0.5em 0;
+  padding: 0 1em;
+}
+
+.getmore {
+  margin: 0.5rem;
+  background: rgba(79,195,247 ,1);
+  border: 0;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.getmore:hover {
+  background: rgba(3,155,229 ,1);
+}
+
+.locations {
+  border: 1px solid #222222;
+  background-color: #eee;
+}
+
+.location {
+  margin: 1rem;
+  background-color: #ddd;
+  padding: 0.5rem;
+}
+.state-province {
+  transition: ease 400ms;
+}
+.country-region {
+  transition: ease 400ms;
+}
+
+.lang-grid--title {
+  font-size: 1em;
+  color: rgba(198,40,40 ,1);
+}
+
+.lang-grid--trans {
+  font-size: 1em;
+  color: rgba(144,164,174 ,1);
+  transition: ease 300ms;
+}
+
+.hide {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity ease 300ms;
+}
