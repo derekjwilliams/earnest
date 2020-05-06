@@ -3,6 +3,12 @@
     "test": "jest --watchAll",
     "coverage": "jest --coverage"
   },
+  "jest": {
+    "automock": false,
+    "setupFiles": [
+      "./setupJest.js"
+    ]
+  },
   "name": "crest",
   "version": "1.0.0",
   "main": "index.js",
@@ -13,6 +19,7 @@
     "add": "^2.0.6",
     "babel-jest": "^26.0.1",
     "jest": "^26.0.1",
+    "jest-fetch-mock": "^3.0.3",
     "yarn": "^1.22.4"
   },
   "dependencies": {
